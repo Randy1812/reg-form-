@@ -57,6 +57,8 @@ const Validate = (e) => {
   const yrs = document.querySelector("#yrs");
   const bnfc = document.querySelector("#bnfc");
 
+  console.log(yrs.value)
+
 
   const fnamerr = document.querySelector("#fnamerr");
   const lnamerr = document.querySelector("#lnamerr");
@@ -68,7 +70,7 @@ const Validate = (e) => {
   const bnfcerr = document.querySelector("#bnfcerr");
 
   if(bnfc.value === "") {
-    bnfcerr.innerHTML = "The Beneficiarie's Name must be provided.";
+    bnfcerr.innerHTML = "The Beneficiaries Name must be provided.";
     bnfc.focus();
   } else {
     bnfcerr.classList.add("hidden");
@@ -80,8 +82,8 @@ const Validate = (e) => {
     yrerr.innerHTML = "The minimum number of years is 5.";
     yrs.focus();
   } else {
-    yrterr.classList.add("hidden");
-    yrterr.innerHTML = "";
+    yrerr.classList.add("hidden");
+    yrerr.innerHTML = "";
   }
   if(amt.value === "") {
     amterr.innerHTML = "The amount must be provided.";
