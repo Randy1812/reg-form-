@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <form class="login">
+      <div class="form-field">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="John">
+        <small class="error" id="fnamerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Doe">
+        <small class="error" id="lnamerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" name="dob" max="2005-12-31">
+        <small class="error" id="doberr"></small>
+      </div>
+      <div class="form-field">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" disabled>
+        <small class="error" id="agerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="mob">Mobile Number</label>
+        <input type="text" id="mob" name="mob" placeholder="10-digit number">
+        <small class="error" id="moberr"></small>
+      </div>
+      <div class="form-field">
+        <label for="eml">Email</label>
+        <input type="email" id="eml" name="eml" placeholder="johndoe@gmail.com">
+        <small class="error" id="emlerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="ins-type">Select the Type Of Insurance</label>
+        <select name="ins-type" id="ins-type">
+          <option hidden selected value="none"> -- Select an Option --</option>
+          <option value="life">Life Insurance</option>
+          <option value="car">Car Insurance</option>
+          <option value="property">Property Insurance</option>
+          <option value="health">Health Insurance</option>
+        </select>
+        <small class="error" id="typerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="amt">Amount (Minimum Amount is $5000) </label>
+        <input type="number" id="amt" name="amt" placeholder="5000">
+        <small class="error" id="amterr"></small>
+      </div>
+      <div class="form-field">
+        <label for="yrs">Number Of Years (Minimum number is 5 years) </label>
+        <input type="number" id="yrs" name="yrs" placeholder="5">
+        <small class="error" id="yrerr"></small>
+      </div>
+      <div class="form-field">
+        <label for="bnfc">Beneficiarie's Full Name </label>
+        <input type="text" id="bnfc" name="bnfc" placeholder="Jake Johnson">
+        <small class="error" id="bnfcerr"></small>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
