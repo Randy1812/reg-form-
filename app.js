@@ -1,7 +1,13 @@
 document.querySelector("#lname").addEventListener("change", function() {
   const lnm = new RegExp("^(\.[A-Z])*$");
   let lnmval = document.querySelector("#lname").value
-  console.log(lnm.test(lnmval))
+  if(!lnm.test(lnmval)) {
+    lnamerr.innerHTML = "Last Name must be of the form .N.K";
+    lname.focus();
+  } else {
+    lnamerr.classList.add("hidden");
+    lnamerr.innerHTML = "";
+  }
 });
 
 document.querySelector("#dob").addEventListener('change', function() {
